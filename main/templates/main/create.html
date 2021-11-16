@@ -1,0 +1,16 @@
+{% extends 'main/basic.html' %}
+
+{% block title %}
+Create process
+{% endblock %}
+
+{% block body %}
+    <h1>Creating process</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.topic }}<br>
+        {{ form.basis }}<br>
+        <button type="submit" class="btn btn-success">Add</button>
+        <span>{{ error }}</span>
+    </form>
+{% endblock %}

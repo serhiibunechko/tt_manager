@@ -1,0 +1,19 @@
+{% extends 'main/basic.html' %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block body %}
+    <h5>All processes</h5>
+    {% if processes %}
+    {% for el in processes %}
+        <div class="alert alert-info mt-2">
+            <h3>{{ el.topic }}</h3>
+            <p>{{ el.basis }}</p>
+        </div>
+    {% endfor %}
+    {% else %}
+        <p>List of processes is empty</p>
+    {% endif %}
+{% endblock %}

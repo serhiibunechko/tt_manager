@@ -1,0 +1,39 @@
+{% extends 'main/basic.html' %}
+
+{% block title %}
+Page about us
+{% endblock %}
+
+{% block body %}
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="col d-flex align-items-start">
+        <div class="fa fa-github me-2" style="font-size:36px">
+        </div>
+        <div>
+          <h2>GitHub page</h2>
+          <p>Please click the button below to see my code on the github.</p>
+          <a href="https://github.com/serhiibunechko" class="btn btn-outline-dark">View page</a>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div class="fa fa-linkedin-square me-2" style="font-size:36px">
+        </div>
+        <div>
+          <h2>LinkedIn page</h2>
+          <p>Find out more about me. Welcome to join my network in Linkedin.</p>
+          <a href="https://www.linkedin.com/in/bunechko/" class="btn btn-outline-dark">View page</a>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-2">
+          <img style="font-size:36px" src="//pic.onlinewebfonts.com/svg/img_454002.png" alt="Cv Resume" width="30" height="33">
+        </div>
+        <div>
+          <h2>Serhii Bunechko CV</h2>
+          <p>If you have any job offers - here you can see my resume.</p>
+          <a href="#" class="btn btn-outline-dark">Go it</a>
+        </div>
+      </div>
+    </div>
+
+{% endblock %}
