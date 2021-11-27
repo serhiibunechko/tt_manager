@@ -1,2 +1,3 @@
 ## tt_manager
-Little web app created on Django + PostgreSQL with links on my LinkedIn and my CV
+Little web app created on Django + PostgreSQL
+In about.html you can learn more about me and find links to contacts
